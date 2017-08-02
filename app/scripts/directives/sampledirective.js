@@ -17,8 +17,8 @@
           
         }
 
-        function link(){
-
+        function link(scope, element, attr){
+         $(element).css("background-color", "yellow")
         }
 
         return {
