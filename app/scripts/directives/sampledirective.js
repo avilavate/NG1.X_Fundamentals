@@ -14,17 +14,16 @@
             // $scope.clickMe=function(){
             //     console.log("Printing from directive");
             // }
-
         }
 
         function link(scope, element, attr, ngCtrl) {
             console.log("called:");
             // $(element).css("background-color", "yellow")
 
-            $(element).bind("scroll", () => {
-                scope.$apply(()=>{
-                scope.awesomeThings.push("New Item1");
-                console.log(scope.awesomeThings);
+            $(element).bind("scroll", (e) => {
+                scope.$apply(() => {
+                    scope.awesomeThings.push("avil");
+                    console.log(scope.awesomeThings);
                 });
             });
 
