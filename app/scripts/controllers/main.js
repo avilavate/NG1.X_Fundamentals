@@ -10,13 +10,23 @@
 angular.module('yongularApp')
   .controller('MainCtrl', ["$scope",function ($scope) {
 
-    this.awesomeThings = [
+    $scope.awesomeThings = [
       'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+      'AngularJS1',
+      'HTML5 Boilerplate2',
+      'AngularJS3',
+      'HTML5 Boilerplate4',
+      'AngularJS5',
+      'HTML5 Boilerplate6',
+      'AngularJS7',
+      'Karma8'
     ];
 
     $scope.clickMe=function(){
      console.log("Hi");
     };
+
+    $scope.loadMore=function(){
+      console.log("sdfsd");
+    }
   }]);

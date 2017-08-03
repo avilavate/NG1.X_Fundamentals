@@ -1,13 +1,17 @@
 <div class="jumbotron">
   <h1>'Allo, 'Allo!</h1>
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br> Always a pleasure scaffolding your apps.
   </p>
   <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 <button ng-click="clickMe()">Click</button>
-<div sampledirective> </div>
+<div> </div>
+<ul sampledirective style="height:100px; overflow:scroll;" ng-change="loadMore()" ng-model="awesomeThings">
+  <li ng-repeat="things in awesomeThings  track by $index">
+    {{things}}
+  </li>
+</ul>
 <div class="row marketing">
   <h4>HTML5 Boilerplate</h4>
   <p>
