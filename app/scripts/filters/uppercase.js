@@ -10,7 +10,9 @@
  */
 angular.module('yongularApp')
   .filter('uppercase', function () {
-    return function (input) {
-      return input.substring(0,1).toUpperCase()+input.substring(1,input.length);
+
+    return function (input, yesNo) {
+      if (!yesNo) return input;
+      return input.substring(0, 1).toUpperCase() + input.substring(1, input.length);
     };
   });

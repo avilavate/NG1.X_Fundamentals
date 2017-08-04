@@ -9,7 +9,7 @@
 <div> </div>
 <ul sampledirective style="height:100px; overflow:scroll;" ng-change="loadMore()" ng-model="awesomeThings">
   <li ng-repeat="things in awesomeThings  track by $index">
-    {{things | uppercase}}
+    {{things | uppercase:true}}
   </li>
 </ul>
 <div class="row marketing">
