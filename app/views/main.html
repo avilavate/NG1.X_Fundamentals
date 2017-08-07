@@ -12,17 +12,12 @@
     {{things | uppercase:true}}
   </li>
 </ul>
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+<div ng-controller="WatcherCtrl">
+  {{filters}}
+  <input type="text" ng-model="filters" />
+  <button ng-click="changeIt()">
+      clik me
+    </button>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+</div>
 </div>
